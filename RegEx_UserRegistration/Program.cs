@@ -11,7 +11,15 @@ namespace RegEx_UserRegistration
         static void Main(string[] args)
         {
             Patterns user = new Patterns();
-            Console.WriteLine(user.validateName("Pa"));
+            //Examples
+            //for first name
+            Console.WriteLine(user.validateFirstName("Pankaj"));//True
+            Console.WriteLine(user.validateFirstName("pankaj"));//False
+            Console.WriteLine(user.validateFirstName("pa"));//False
+            //for last name
+            Console.WriteLine(user.validateLastName("Th"));//False
+            Console.WriteLine(user.validateLastName("thorat"));//False
+            Console.WriteLine(user.validateLastName("Thorat"));//True
         }
     }
 }

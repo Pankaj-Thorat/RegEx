@@ -9,10 +9,15 @@ namespace RegEx_UserRegistration
 {
     class Patterns
     {
-        public static string REGEX_Name = "^[A-Z][a-zA-Z]{2,}";
-        public bool validateName(string name)
+        public static string REGEX_NAME = "^[A-Z][a-zA-Z]{2,}";
+        public bool validateFirstName(string firstname)
         {
-            return Regex.IsMatch(name, REGEX_Name);
+            return Regex.IsMatch(firstname, REGEX_NAME);
+        }
+
+        public bool validateLastName(string lastname)
+        {
+            return Regex.IsMatch(lastname, REGEX_NAME); 
         }
     }
 }
