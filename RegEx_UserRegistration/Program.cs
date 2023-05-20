@@ -20,6 +20,10 @@ namespace RegEx_UserRegistration
             Console.WriteLine(user.validateLastName("Th"));//False
             Console.WriteLine(user.validateLastName("thorat"));//False
             Console.WriteLine(user.validateLastName("Thorat"));//True
+            //for email
+            Console.WriteLine(user.validateEmail("abc@bl.co"));//True
+            Console.WriteLine(user.validateEmail("abc.xyz@bl.co.in"));//True
+            Console.WriteLine(user.validateEmail("Thorat+100@pl.com"));///False
         }
     }
 }
