@@ -23,7 +23,7 @@ namespace RegEx_UserRegistration
             //for email
             Console.WriteLine(user.validateEmail("abc@bl.co"));//True
             Console.WriteLine(user.validateEmail("abc.xyz@bl.co.in"));//True
-            Console.WriteLine(user.validateEmail("Thorat+100@pl.com"));///False
+            Console.WriteLine(user.validateEmail("Thorat+100@.pl.com"));///False
         }
     }
 }
