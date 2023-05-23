@@ -24,6 +24,12 @@ namespace RegEx_UserRegistration
             Console.WriteLine(user.validateEmail("abc@bl.co"));//True
             Console.WriteLine(user.validateEmail("abc.xyz@bl.co.in"));//True
             Console.WriteLine(user.validateEmail("Thorat+100@.pl.com"));///False
+            //for phone number
+            Console.WriteLine(user.validatePhone("9890854276"));   //True
+            Console.WriteLine(user.validatePhone("91 9890854276"));//True
+            Console.WriteLine(user.validatePhone("+919890854276"));//True
+            Console.WriteLine(user.validatePhone("+91989085427"));//False (9 digit)
+
         }
     }
 }
