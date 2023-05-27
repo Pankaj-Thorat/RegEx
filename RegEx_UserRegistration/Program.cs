@@ -32,12 +32,13 @@ namespace RegEx_UserRegistration
             Console.WriteLine(user.validatePhone("9890854276"));   //True
             Console.WriteLine(user.validatePhone("91 9890854276"));//True
             Console.WriteLine(user.validatePhone("+919890854276"));//True
-            Console.WriteLine(user.validatePhone("+91989085427"));//False (9 digit)
-            //for password
+            Console.WriteLine(user.validatePhone("+91989085427")); //False (9 digit)
+            //for password rule 2(1upper case)
             Console.WriteLine("For Password");
-            Console.WriteLine(user.validatePass("pankaj123"));//True
-            Console.WriteLine(user.validatePass("pankaj@12310"));//True
-            Console.WriteLine(user.validatePass("pankaj"));//False
+            Console.WriteLine(user.validatePass("Pankaj123"));    //True
+            Console.WriteLine(user.validatePass("pAnkaj@12310")); //True
+            Console.WriteLine(user.validatePass("pankaj@12"));    //False
+            Console.WriteLine(user.validatePass("PANKAJ@12"));    //True
 
         }
     }
