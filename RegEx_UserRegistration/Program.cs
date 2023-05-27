@@ -36,7 +36,7 @@ namespace RegEx_UserRegistration
             //for password rule 2(1upper case)
             Console.WriteLine("For Password");
             Console.WriteLine(user.validatePass("Pankaj123"));    //True
-            Console.WriteLine(user.validatePass("pAnkaj@12310")); //True
+            Console.WriteLine(user.validatePass("pAnkaj@"));      //False
             Console.WriteLine(user.validatePass("pankaj@12"));    //False
             Console.WriteLine(user.validatePass("PANKAJ@12"));    //True
 
